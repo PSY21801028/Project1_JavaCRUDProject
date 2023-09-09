@@ -34,9 +34,11 @@ public class WordManager {
             else if(menu == 1) wordCRUD.listAll();
             //if(menu == 2) levelView();
             if(menu == 3) break;
-            if(menu == 4) wordCRUD.addWord();
-            if(menu == 5) break;
-            if(menu == 6) break;
+            if(menu == 4) wordCRUD.addWord(); // create
+            if(menu == 5) {
+             wordCRUD.updateItem();
+            } // update
+            if(menu == 6) break; // delete
             if(menu == 7) break;
         }
     }

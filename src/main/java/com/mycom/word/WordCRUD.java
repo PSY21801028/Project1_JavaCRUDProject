@@ -38,6 +38,9 @@ public class WordCRUD implements ICRUD {
         }
         System.out.println("--------------------------------");
     }
+    public void updateItem() {
+
+    }
 
     @Override
     public int update(Object obj) {
@@ -53,4 +56,5 @@ public class WordCRUD implements ICRUD {
     public int selectOne(int id) {
         return 0;
     }
+
 }
