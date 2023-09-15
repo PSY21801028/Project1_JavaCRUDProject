@@ -38,7 +38,9 @@ public class WordManager {
             if(menu == 5) {
              wordCRUD.updateItem();
             } // update
-            if(menu == 6) break; // delete
+            if(menu == 6) {
+                wordCRUD.deleteitem();// delete
+            }
             if(menu == 7) break;
         }
     }
