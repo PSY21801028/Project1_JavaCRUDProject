@@ -141,17 +141,17 @@ public class WordCRUD implements ICRUD {
         }
     }
 
-//    public void searchLevel() {
-//        System.out.print("=> 원하는 레벨은? (1~3) ");
-//        int level = s.nextInt();
-//        listAll(level);
-//    }
-//
-//    public void searchWord() {
-//        System.out.print("=> 원하는 단어는? ");
-//        String keyword = s.next().trim();
-//        listAll(keyword);
-//    }
+    public void searchLevel() {
+        System.out.print("=> 원하는 레벨은? (1~3) ");
+        int level = s.nextInt();
+        listAll(level);
+    }
+
+    public void searchWord() {
+        System.out.print("=> 원하는 단어는? ");
+        String keyword = s.next().trim();
+        listAll(keyword);
+    }
 
     @Override
     public int update(Object obj) {

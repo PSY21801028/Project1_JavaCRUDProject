@@ -34,8 +34,8 @@ public class WordManager {
                 break;
             }
             else if(menu == 1) wordCRUD.listAll(); // view all
-//            if(menu == 2) wordCRUD.searchLevel(); // level category
-//            if(menu == 3) wordCRUD.searchWord(); // search
+            if(menu == 2) wordCRUD.searchLevel(); // level category
+            if(menu == 3) wordCRUD.searchWord(); // search
             if(menu == 4) wordCRUD.addWord(); // create
             if(menu == 5) {
              wordCRUD.updateItem();
