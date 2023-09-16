@@ -1,4 +1,4 @@
-# 영어단어장 프로젝트 제작, Update, Delete, Search, File I/O 기능 구현하기
+# 영어단어장 프로젝트 제작, Update, Delete, Search, File I/O 기능 구현
 
 ## 등록된 Word 데이터의 수정 기능, 삭제 기능
 ### [5. 단어 수정]
