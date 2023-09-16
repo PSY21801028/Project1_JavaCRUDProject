@@ -53,4 +53,8 @@ public class Word {
         String str = String.format("%-3s", slevel) + String.format("%15s", word) + "  " + meaning;
         return str;
     }
+    public String toFileString() { // File의 data를 출력할때, 어떤 포맷으로 써줄지 정해줌.
+        return this.level + "|" + this.word + "|" + this.meaning;
+    }
+
 }

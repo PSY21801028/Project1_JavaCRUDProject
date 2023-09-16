@@ -25,15 +25,17 @@ public class WordManager {
         return s.nextInt();
     }
     public void start() {
+
+        wordCRUD.loadfile(); // 처음 프로그램이 시작될때, while 문으로 들어가면 계속 반복되니까 이 구간에서 불러옴.
         while(true) {
             int menu = selectMenu();
             if(menu == 0) {
                 System.out.println("프로그램 종료! See you later :)");
                 break;
             }
-            else if(menu == 1) wordCRUD.listAll();
-            //if(menu == 2) levelView();
-            if(menu == 3) break;
+            else if(menu == 1) wordCRUD.listAll(); // view all
+//            if(menu == 2) wordCRUD.searchLevel(); // level category
+//            if(menu == 3) wordCRUD.searchWord(); // search
             if(menu == 4) wordCRUD.addWord(); // create
             if(menu == 5) {
              wordCRUD.updateItem();
@@ -41,7 +43,10 @@ public class WordManager {
             if(menu == 6) {
                 wordCRUD.deleteitem();// delete
             }
-            if(menu == 7) break;
+            if(menu == 7) {
+                wordCRUD.saveFile();
+            } // save
+
         }
     }
 }
